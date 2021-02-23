@@ -6,7 +6,7 @@ let numberM = +prompt("Введіть, будь ласка, друге знач�
 if(Number.isInteger(numberN) && Number.isInteger(numberM)) {
     let sum = 0;
     let questionEven = confirm("Чи бажаєте пропускати парні числа в обрахунках?");
-    if(questionEven == true) {
+    if(questionEven) {
         for(let i = numberN; i <= numberM; i++){
             if(i % 2 != 0) {
                 sum += i;
